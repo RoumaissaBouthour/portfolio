@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header navbar navbar-expand-lg navbar-dark">
+        
+            <a href="#home" class="navbar-brand logo">Roumayssa <span>Bouthour</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="navbar-nav ms-auto">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#project" class="nav-link">projects</a>
+                    <a href="#skill" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </nav>
+            </div>
+        
+    </header>
+
+<section class="home d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="home-content">
+                        <h1>Hi, It's <span>Roumayssa</span></h1>
+                        <p>I'm a computer science student at ISAMM who likes coding and technology</p>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/roumaissa-bouthour-185556330/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/RoumaissaBouthour"><i class="bi bi-github"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="home-img">
+                        <img src="images/rourou.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content-about">
+                <h2>About Me</h2>
+                <p>I am a Computer Science student with a passion for technology and problem-solving.
+                     I enjoy exploring web development, software engineering, and creating
+                      innovative solutions to everyday challenges. Currently,
+                      I’m honing my skills in building web applications,
+                       with a focus on user-friendly and efficient designs. 
+                       I’m always eager to learn new technologies and collaborate
+                        on projects that make a positive impact.</p>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="container">
+            <h2 class="mb-5">My Project</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1" width="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual Pet Website</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill" id="skill">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="container-skill">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/html.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/css.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/js.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/mysql.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/c.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="images/python.png" class="img-fluid skill-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label><br>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label><br>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label><br>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+                <div class="sendBtn">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-contact">
+                    <div class="social-links text-center">
+                        <a href="https://www.linkedin.com/in/roumaissa-bouthour-185556330/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/RoumaissaBouthour"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Roumayssa Bouthour.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
